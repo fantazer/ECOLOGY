@@ -1,0 +1,204 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+.page
+	+header()
+	.main-cont
+		.header.f.f-between
+				a(href="#").header-logo
+					img(src="img/logo.svg", alt="")
+				a(href="#").header-parnter
+					img(src="img/logo-sobibator.svg", alt="")
+
+
+	.content
+		.main-cont
+			.row.mb-100
+				.g-1-6.f.f-aic
+					.type--44.type--w700 Нам действительно не все равно куда девается использованная упаковка от наших рационов
+				.g-7-12
+					img(src="img/banner-img.svg", alt="")
+
+			.type--32.type--w700.type--mid.mb-32 Упаковка, которую мы используем
+			.pack.mb-100
+				.pack-el
+					.pack-el-icon.br-12.mb-24
+						+icon("container","icon")
+					.type--mid.mb-16 контейнеры под блюда
+					.pack-el-type
+						.convert
+							+icon("convert","icon")
+							span PP5
+				.pack-el
+					.pack-el-icon.br-12.mb-24
+						+icon("box","icon")
+					.type--mid.mb-16 контейнеры для десертов и каш
+					.pack-el-type
+						.convert
+							+icon("convert","icon")
+							span PP5
+				.pack-el
+					.pack-el-icon.br-12.mb-24
+						+icon("bottle","icon")
+					.type--mid.mb-16 бутылки для соков и детоксов
+					.pack-el-type
+						.convert
+							+icon("convert","icon")
+							span PET1
+				.pack-el
+					.pack-el-icon.br-12.mb-24
+						+icon("cutlery","icon")
+					.type--mid.mb-16 приборы
+					.pack-el-type
+						.convert
+							+icon("convert","icon")
+							span PP5
+				.pack-el
+					.pack-el-icon.br-12.mb-24
+						+icon("sauce","icon")
+					.type--mid.mb-16 соусники
+					.pack-el-type
+						.convert
+							+icon("convert","icon")
+							span PP5
+				.pack-el
+					.pack-el-icon.br-12.mb-24
+						+icon("bag","icon")
+					.type--mid.mb-16 крафтовые пакеты из вторсырья
+					.pack-el-type
+				.pack-el
+					.pack-el-icon.br-12.mb-24
+						+icon("layer","icon")
+					.type--mid.mb-16 наклейки на бумажной основе
+					.pack-el-type
+
+			.type--32.type--w700.type--mid.mb-32 Как подготовить упаковку к переработке
+
+			.step.mb-80
+				.step__el
+					.step__numb 1
+					.step__info Отметьте галочкой в личном кабинете пункт «Я хочу сдавать упаковку на переработку»
+				.step__el
+					.step__numb 2
+					.step__info Сполосните контейнеры водой от остатков пищи или других загрязнений
+				.step__el
+					.step__numb 3
+					.step__info Удалите остатки плёнки и наклейки, если они находятся на самой упаковке
+				.step__el
+					.step__numb 4
+					.step__info При следующей доставке, передайте нашему курьеру собранные контейнеры
+				.step__el
+					.step__numb 5
+					.step__info Эти контейнеры, а также другую пластиковую упаковку, вы также можете, не дожидаясь нашего курьера, самостоятельно выбросить в урны для сбора пластика в Вашем городе. (см. карту ниже)
+				.step__el
+					.step__numb 6
+					.step__info Мы соберём контейнеры, и отправим на переработку на завод, где будет получено вторсырьё для дальнейшего использования
+
+			.type--24.type--w700.type--mid.mb-32 Или посмотрите ролик
+
+			.row.gap-32.mb-100
+				.g-1-3
+					.border-gradient.br-12
+						.border-gradient-inner
+							.f.f-mid.f-col
+								.type--mid.mb-24 Перейти к видео также можно через QR-код
+								img(src="img/qr.svg", alt="")
+				.g-4-12
+					a(href="https://youtu.be/O9FWhWxarU0" style="background-image:url('img/video-bg.jpg')").fancybox.video.bg-full
+						+icon("youtube--color","icon")
+
+			.type--32.type--w700.type--mid.mb-32 Зачем перерабатывать мусор?
+			.row.gap-28.mb-100
+				.g-1-9
+					.border-gradient.br-12
+						.why
+							.type--24.type--w700.mb-24 Переработав 1 тонну пластика, мы сохраним:
+							.why-row.mb-24
+								.why__el
+									.why__el-cond.mb-8
+										.why__el-val 5744
+										.why__el-type квт
+									.type--md.type--w700 энергии
+								.why__el
+									.why__el-cond.mb-8
+										.why__el-val 3120
+										.why__el-type л
+									.type--md.type--w700 нефти
+								.why__el
+									.why__el-cond.mb-8
+										.why__el-val 25,08
+										.why__el-type м2
+									.type--md.type--w700 свалки
+							.why-desr.type--20 экологическую чистоту грунтовых вод и почвы на площади 1 га
+				.g-10-12.f.f-mid
+					.f.f-mid.f-col
+						img(src="img/bottles.svg", alt="").w70.mb-24
+						.type--mid.w70 всего 25 пластиковых бутылок — целая флисовая куртка
+		.bg--snow.mb-100
+			.main-cont
+				.f.f-jcsb.f-aic
+					.w50
+						img(src="img/banner-box.png", alt="")
+					.w40
+						.el
+							.type--w700.type--32.mb-24 Почему мы не перейдём на полностью бумажную упаковку?
+							.text
+								p Современная упаковка из бумаги имеет водооталкивающий влагостойкий слой, выстилающий дно контейнеров для пищи, который не поддаётся переработке. Если не удалить его полностью, контейнер будет разлагаться сотню лет.
+								p Мы приняли решение продолжить использование пластика и наладить сбор и утилизацию. При правильной утилизации и переработке, пластик становится наименее губителен для природы. Вот почему мы используем пластик.
+
+		.type--32.type--w700.type--mid.mb-24 Пункты приёма упаковок
+		.wmax-640.ml-a.mr-a.mb-32
+			.type--mid Ближайший пункт приёма пластика на переработку вы можете найти на интерактивной карте по <a href="#" class="link--mark">ссылке</a>
+		.main-cont
+			.map.mb-80
+				.map-el
+					//put map her
+
+		.main-cont
+			.row.gap-28.mb-100
+				.g-1-6
+					.type--32.type--w700.mb-24 Что можно сдавать?
+					.f.f-gap-32.f-aifs.mb-48
+						.f.w45
+							.g.g-4.gap-28
+								- for (var i=0;i<8;i++)
+									.convert
+										+icon("convert","icon")
+										span PP5
+						.border-gradient.br-12
+							.bg--white.p-24
+								.type--w700 Всё должно быть:
+								.type--main + чистое и сухое
+								.type--main + однокомпонентное
+								.type--main + разделённое
+					.text
+						ul.list--mark
+							li Пластик с маркировкой 1, 2, 4, 5, 6
+							li Бумагу и картон
+							li Алюминиевые и жестяные банки
+							li Картонную упаковку из-под напитков (Тетра-пак и подобную ей)
+							li Стекло
+							li Пенопласт (вспененный полистирол)
+				.g-7-12
+					.type--32.type--w700 Не подходят
+					.text
+						ul.list--red
+							li Салфетки
+							li Кассовые чеки
+							li Транспортные карты
+							li Многокомпонентная бумага и картон с ламинацией
+							li Пачки от сигарет
+							li Бутылки из-под растительного масла, баллончики из-под аэрозолей, краски, огнетушители и т.п.
+							li Стеклянные предметы в разбитом виде, стеклобой, столовая посуда (из керамики, фарфора и т.д.), триплекс, закалённое стекло, зеркала
+							li Пластик 3 и 7
+
+		.bg--greenLight
+			.main-cont
+				.row.pt-48.gap-28
+					.g-1-6
+						img(src="img/peoples.svg", alt="")
+					.g-7-11.alignSelf-center
+						.type--w700.type--32.mb-24 Давайте окажем посильную помощь природе и будем ответственно подходить к вопросам сбора и утилизации мусора вместе!
+
+	+footer()
+include ./block_html/_script.pug

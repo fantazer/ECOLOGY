@@ -1,0 +1,143 @@
+//@import "grid/_grid.styl"
+@import 'rupture'
+@import "variable/_function.styl"
+@import "variable/_ie.styl"
+@import "variable/_helper.styl"
+@import "grid/grid.css"
+@import "grid/extends.css"
+
+@import "variable/config/_config.styl"
+@import "variable/config/_grid.styl"
+@import "variable/_default.styl"
+
+@import "variable/config/_color.styl"
+@import "variable/config/_typography.styl"
+@import "variable/config/_btn.styl"
+@import "variable/config/_input.styl"
+@import "../module/**/*"
+
+body
+	@extend .type--main
+	font-family $font
+	color black
+	line-height 1.4
+	letter-spacing 0.01em
+
+.main-cont
+	center(1330px,20px)
+
+.page
+	f()
+	fl()
+	min-height 100vh
+
+.content
+	flex-grow 1
+	overflow: hidden
+
+.content--mid
+	flex(mid)
+
+.header
+	margin: 60px 0
+
+.pack
+	f()
+	justify-content space-between
+
+.pack-el
+	width: 13%
+
+.pack-el-icon
+	background: $greenLight
+	padding: 44px 10px
+	flex(mid)
+	.icon
+		size 72px
+		fill $mark
+
+.step
+	display: grid
+	grid-gap 48px
+	grid-template-columns: repeat(3, 1fr)
+.step__el
+	f()
+.step__numb
+	font-size: 80px
+	color $greenPrimary
+	font-weight: 700
+	line-height: .8
+	margin-right: 32px
+	text-shadow 4px 4px $mark
+
+.video
+	padding: 30% 10%
+	position relative
+	cp()
+	display block
+	&:hover
+		.icon
+			opacity: 1
+	.icon
+		position absolute
+		top 50%
+		left 50%
+		size 72px
+		opacity: .6
+		tr()
+		transform translate(-50%,-50%)
+
+.border-gradient
+	background: linear-gradient(98.95deg, #E3EEFF 0%, #E4F6E4 52.6%, #FFEEE4 100%)
+	padding: 12px
+.border-gradient-inner
+	background: white
+	padding: 40px 20px
+
+.why
+	background: white
+	padding: 40px 8%
+.why-row
+	display: grid
+	grid-gap 20px
+	grid-template-columns: repeat(3, 1fr)
+
+.why__el-cond
+	f()
+	align-items: flex-end
+.why__el-val
+	font-weight: 700
+	color $mark
+	@extend .type--xl
+	line-height: 1
+	margin-right: 10px
+
+.why__el-type
+	font-weight: 700
+	color $mark
+	@extend .type--md
+
+.why-desr
+	padding-left: 16px
+	border-left 6px solid $mark
+
+.map
+	position relative
+	padding: 20% 10%
+.map-el
+	background: $snow
+	position absolute
+	top 0
+	left 0
+	width: 100%
+	height: 100%
+
+.convert
+	flex(mid)
+	fl()
+	.icon
+		size 44px
+		margin-bottom: 4px
+		fill $grayLight
+	span
+		font-weight: 700
