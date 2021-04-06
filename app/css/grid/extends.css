@@ -1,3 +1,6 @@
+.m-0 {
+  margin: 0px;
+}
 .m-4 {
   margin: 4px;
 }
@@ -65,8 +68,11 @@
 }
 @media only screen and (max-width: 640px) {
   .m-100 {
-    margin: 36px;
+    margin: 48px;
   }
+}
+.mt-0 {
+  margin-top: 0px;
 }
 .mt-4 {
   margin-top: 4px;
@@ -135,8 +141,11 @@
 }
 @media only screen and (max-width: 640px) {
   .mt-100 {
-    margin-top: 36px;
+    margin-top: 48px;
   }
+}
+.mr-0 {
+  margin-right: 0px;
 }
 .mr-4 {
   margin-right: 4px;
@@ -205,8 +214,11 @@
 }
 @media only screen and (max-width: 640px) {
   .mr-100 {
-    margin-right: 36px;
+    margin-right: 48px;
   }
+}
+.mb-0 {
+  margin-bottom: 0px;
 }
 .mb-4 {
   margin-bottom: 4px;
@@ -275,8 +287,11 @@
 }
 @media only screen and (max-width: 640px) {
   .mb-100 {
-    margin-bottom: 36px;
+    margin-bottom: 48px;
   }
+}
+.ml-0 {
+  margin-left: 0px;
 }
 .ml-4 {
   margin-left: 4px;
@@ -345,8 +360,11 @@
 }
 @media only screen and (max-width: 640px) {
   .ml-100 {
-    margin-left: 36px;
+    margin-left: 48px;
   }
+}
+.p-0 {
+  padding: 0px;
 }
 .p-4 {
   padding: 4px;
@@ -415,8 +433,11 @@
 }
 @media only screen and (max-width: 640px) {
   .p-100 {
-    padding: 36px;
+    padding: 48px;
   }
+}
+.pt-0 {
+  padding-top: 0px;
 }
 .pt-4 {
   padding-top: 4px;
@@ -485,8 +506,11 @@
 }
 @media only screen and (max-width: 640px) {
   .pt-100 {
-    padding-top: 36px;
+    padding-top: 48px;
   }
+}
+.pr-0 {
+  padding-right: 0px;
 }
 .pr-4 {
   padding-right: 4px;
@@ -555,8 +579,11 @@
 }
 @media only screen and (max-width: 640px) {
   .pr-100 {
-    padding-right: 36px;
+    padding-right: 48px;
   }
+}
+.pb-0 {
+  padding-bottom: 0px;
 }
 .pb-4 {
   padding-bottom: 4px;
@@ -625,8 +652,11 @@
 }
 @media only screen and (max-width: 640px) {
   .pb-100 {
-    padding-bottom: 36px;
+    padding-bottom: 48px;
   }
+}
+.pl-0 {
+  padding-left: 0px;
 }
 .pl-4 {
   padding-left: 4px;
@@ -695,8 +725,12 @@
 }
 @media only screen and (max-width: 640px) {
   .pl-100 {
-    padding-left: 36px;
+    padding-left: 48px;
   }
+}
+.msv-0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .msv-4 {
   margin-top: 4px;
@@ -786,6 +820,10 @@
     margin-bottom: 100px;
   }
 }
+.psv-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
 .psv-4 {
   padding-top: 4px;
   padding-bottom: 4px;
@@ -874,6 +912,10 @@
     padding-bottom: 100px;
   }
 }
+.msh-0 {
+  margin-left: 0px;
+  margin-right: 0px;
+}
 .msh-4 {
   margin-left: 4px;
   margin-right: 4px;
@@ -961,6 +1003,10 @@
     margin-left: 100px;
     margin-right: 100px;
   }
+}
+.psh-0 {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 .psh-4 {
   padding-left: 4px;

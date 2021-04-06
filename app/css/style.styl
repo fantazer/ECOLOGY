@@ -6,6 +6,7 @@
 @import "grid/grid.css"
 @import "grid/extends.css"
 
+
 @import "variable/config/_config.styl"
 @import "variable/config/_grid.styl"
 @import "variable/_default.styl"
@@ -39,13 +40,42 @@ body
 	flex(mid)
 
 .header
+	+below(640px)
+		margin: 30px 0
 	margin: 60px 0
 
+.header-logo
+	+below(768px)
+		width: 30%
+	+below(640px)
+		width: 90px
+
+.partner-logo
+	+below(768px)
+		width: 30%
+	+below(640px)
+		width: 120px
+
 .pack
+	+below(768px)
+		fw()
+		align-items flex-start
+		justify-content center
+		gap(20px)
+	+below(640px)
+		display: grid
+		grid-gap 20px
+		grid-template-columns: repeat(2, 1fr)
+		gap(0px)
+		//grid-template-columns: repeat(auto-fill, minmax(12rem,1fr))
 	f()
 	justify-content space-between
 
 .pack-el
+	+below(768px)
+		width 22%
+	+below(640px)
+		width: 100%
 	width: 13%
 
 .pack-el-icon
@@ -57,9 +87,7 @@ body
 		fill $mark
 
 .step
-	display: grid
 	grid-gap 48px
-	grid-template-columns: repeat(3, 1fr)
 .step__el
 	f()
 .step__numb
@@ -71,6 +99,9 @@ body
 	text-shadow 4px 4px $mark
 
 .video
+	+below(640px)
+		margin-left: -20px
+		width calc(100% + 40px)
 	padding: 30% 10%
 	position relative
 	cp()
@@ -86,7 +117,6 @@ body
 		opacity: .6
 		tr()
 		transform translate(-50%,-50%)
-
 .border-gradient
 	background: linear-gradient(98.95deg, #E3EEFF 0%, #E4F6E4 52.6%, #FFEEE4 100%)
 	padding: 12px
@@ -94,10 +124,21 @@ body
 	background: white
 	padding: 40px 20px
 
+.why-wrap
+	+below(640px)
+		padding: 0
+		background: none
+
 .why
+	+below(1024px)
+		padding: 40px 5%
+	+below(640px)
+		padding: 0
 	background: white
 	padding: 40px 8%
 .why-row
+	+below(640px)
+		grid-template-columns: repeat(2, 1fr)
 	display: grid
 	grid-gap 20px
 	grid-template-columns: repeat(3, 1fr)
@@ -106,6 +147,8 @@ body
 	f()
 	align-items: flex-end
 .why__el-val
+	+below(640px)
+		font-size: 30px
 	font-weight: 700
 	color $mark
 	@extend .type--xl
@@ -118,11 +161,32 @@ body
 	@extend .type--md
 
 .why-desr
+	+below(1024px)
+		font-size: 16px
 	padding-left: 16px
 	border-left 6px solid $mark
 
+
+.why-info
+	+below(768px)
+		flex-flow row
+		margin-top: 20px
+		display: grid
+		grid-gap 20px
+		grid-template-columns: repeat(2, 1fr)
+		//grid-template-columns: repeat(auto-fill, minmax(12rem,1fr))
+	+below(640px)
+		grid-template-columns: 1fr
+
+.why-info__text
+	text-align: left
+
 .map
+	+below(768px)
+		margin-left: -20px
+		width calc(100% + 40px)
 	position relative
+	min-height 450px
 	padding: 20% 10%
 .map-el
 	background: $snow
@@ -141,3 +205,15 @@ body
 		fill $grayLight
 	span
 		font-weight: 700
+
+
+.footer
+	+below(640px)
+		padding-top: 40px
+	padding-top: 60px
+
+.footer__text
+	+below(1024px)
+		margin-left: 34px
+	+below(768px)
+		margin-left: 0
