@@ -5116,6 +5116,10 @@ body {
     padding: 40px 5%;
   }
 
+  .why__el-val {
+    font-size: 44px;
+  }
+
   .why-desr {
     font-size: 16px;
   }
